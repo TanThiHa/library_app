@@ -7,7 +7,7 @@ class Admin::BooksController < AdminController
     else
       @books = Book.all
     end
-    @books = @books.newest.paginate page: params[:page],
+    @books = @books.newest.paginate page: 1,
       per_page: 5
   end
 

@@ -1,7 +1,7 @@
 en:
   user_role:
     admin: "Quản trị viên"
-    user: "Người dùng"
+    user: "Bạn đọc"
   status_request:
     start: "Nhận sách"
     processing: "Trả sách"
@@ -10,4 +10,3 @@ en:
     start: "Chưa nhận"
     processing: "Đang mượn"
     finish: "Hoàn tất"
-

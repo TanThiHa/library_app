@@ -22,7 +22,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get "/signup", to: "users#new"
+  get "/signup", to: "users#new" # /signup là url, users là users controller, new là method trong controller
   post "/signup", to: "users#create"
 
   get "/login", to: "sessions#new"

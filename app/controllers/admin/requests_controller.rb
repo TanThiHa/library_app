@@ -34,7 +34,8 @@ class Admin::RequestsController < AdminController
   def finish
     @request.real_date = Date.current
     if @request.real_date > @request.to_date
-      @request.forfeit = @request.forfeit + 2000*(real_date - to_date).to_i
+      @request.forfeit = @request.forfeit +
+        2000*(@request.real_date - @request.to_date).to_i
     end
     @request.request_details.each do |detail|
       if detail.miss?

@@ -7,11 +7,8 @@
     </div>
     <div class="product-content">
       <h3 class="title"><a href="#"><%= book.name %></a></h3>
-      <div class="price">
-        <%= number_with_delimiter(book.price, delimiter: ".") %>
-        <sup style="text-transform: lowercase;">đ</sup>
-      </div>
-      <div><%= book.author %></div>
+      
+      <div class="author"><%= book.author %></div>
       <div class="rating">
         <div class="stars">
           <% 5.times do  %>
@@ -22,10 +19,11 @@
     </div>
     <ul class="social">
       <li>
-        <%= link_to add_to_cart_cart_path(book), "data-tip": "Thêm vào giỏ hàng" do %>
+        <%= link_to add_to_cart_cart_path(book), "data-tip": "Thêm vào danh sách mượn" do %>
           <i class="fa fa-shopping-bag"></i>
         <% end %>
       </li>
     </ul>
   </div>
 </div>
+

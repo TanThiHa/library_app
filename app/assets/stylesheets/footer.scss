@@ -2,6 +2,14 @@ section {
   padding: 10px 0;
 }
 
+#fixed-footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
 #footer {
   background: #007b5e !important;
 }

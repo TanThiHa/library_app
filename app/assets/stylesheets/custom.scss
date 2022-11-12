@@ -133,3 +133,6 @@ a.navbar-brand i{
     color: $state-danger-text;
   }
 }
+.container {
+  min-height: calc(100vh - 247px);
+}
